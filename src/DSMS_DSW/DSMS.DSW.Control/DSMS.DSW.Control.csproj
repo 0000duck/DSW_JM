@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BFDEFA8-4095-4CBC-91E1-AD1B6EBECC8F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DSMS.DSW.Control</RootNamespace>
+    <AssemblyName>后整理助剂配送</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="LitJson">
+      <HintPath>..\Lib\LitJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data, Version=0.19.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Lib\Simple.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data.Ado">
+      <HintPath>..\Lib\Simple.Data.Ado.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple.Data.SqlServer">
+      <HintPath>..\Lib\Simple.Data.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Action\CabinetWaterDS.cs" />
+    <Compile Include="Action\DistributionBase.cs" />
+    <Compile Include="Action\EndWaterDS.cs" />
+    <Compile Include="Action\FormulaStatus.cs" />
+    <Compile Include="Action\MaterialDS.cs" />
+    <Compile Include="Action\WashingMaterialDS.cs" />
+    <Compile Include="Action\WashingCabinetWaterDS.cs" />
+    <Compile Include="Action\WashingFormulaStatus.cs" />
+    <Compile Include="BLL\IService.cs" />
+    <Compile Include="BLL\LogManager.cs" />
+    <Compile Include="BLL\QueuesListen.cs" />
+    <Compile Include="BLL\Service.cs" />
+    <Compile Include="BLL\TCPServer.cs" />
+    <Compile Include="BLL\UDPServer .cs" />
+    <Compile Include="BLL\WcfService .cs" />
+    <Compile Include="CabinetListen.cs" />
+    <Compile Include="Class\FormsAutoSize.cs" />
+    <Compile Include="Class\TCPClass.cs" />
+    <Compile Include="FrmAlarmAndQueue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlarmAndQueue.Designer.cs">
+      <DependentUpon>FrmAlarmAndQueue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDefault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDefault.designer.cs">
+      <DependentUpon>FrmDefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMaterialEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMaterialEdit.Designer.cs">
+      <DependentUpon>FrmMaterialEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMessageBox.designer.cs">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMonthCalendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMonthCalendar.designer.cs">
+      <DependentUpon>FrmMonthCalendar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNumSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNumSet.Designer.cs">
+      <DependentUpon>FrmNumSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParamSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParamSet.Designer.cs">
+      <DependentUpon>FrmParamSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRecordSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRecordSearch.Designer.cs">
+      <DependentUpon>FrmRecordSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSelectFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSelectFormula.Designer.cs">
+      <DependentUpon>FrmSelectFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSingleTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSingleTest.Designer.cs">
+      <DependentUpon>FrmSingleTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWashing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWashing.Designer.cs">
+      <DependentUpon>FrmWashing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Golbal.cs" />
+    <Compile Include="MyControl\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\ControlState.cs" />
+    <Compile Include="MyControl\DataView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\DelColumnPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\DXPager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\DXPager.designer.cs">
+      <DependentUpon>DXPager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyControl\GraphicsPathHelper.cs" />
+    <Compile Include="MyControl\MyLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\MyLabelPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\MyPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\NumPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\RoundPanel .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\RoundStyle.cs" />
+    <Compile Include="MyControl\TLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyControl\UCDateTimePicker.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MyControl\UCDateTimePicker.designer.cs">
+      <DependentUpon>UCDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmStandardFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStandardFormula.Designer.cs">
+      <DependentUpon>FrmStandardFormula.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmAlarmAndQueue.resx">
+      <DependentUpon>FrmAlarmAndQueue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDefault.resx">
+      <DependentUpon>FrmDefault.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMaterialEdit.resx">
+      <DependentUpon>FrmMaterialEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMonthCalendar.resx">
+      <DependentUpon>FrmMonthCalendar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNumSet.resx">
+      <DependentUpon>FrmNumSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParamSet.resx">
+      <DependentUpon>FrmParamSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRecordSearch.resx">
+      <DependentUpon>FrmRecordSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSelectFormula.resx">
+      <DependentUpon>FrmSelectFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSingleTest.resx">
+      <DependentUpon>FrmSingleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWashing.resx">
+      <DependentUpon>FrmWashing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\DataView.resx">
+      <DependentUpon>DataView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\DelColumnPanel.resx">
+      <DependentUpon>DelColumnPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\DXPager.resx">
+      <DependentUpon>DXPager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\MyLabelPanel.resx">
+      <DependentUpon>MyLabelPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\NumPanel.resx">
+      <DependentUpon>NumPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyControl\UCDateTimePicker.resx">
+      <DependentUpon>UCDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="FrmStandardFormula.resx">
+      <DependentUpon>FrmStandardFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Img\Add.png" />
+    <Content Include="Img\checked_checkbox.png" />
+    <Content Include="Img\CloseButton.png" />
+    <Content Include="Img\filesave.png" />
+    <Content Include="Img\loginBg.png" />
+    <Content Include="Img\Logo.ico" />
+    <Content Include="Img\Title.png" />
+    <Content Include="Img\unchecked.png" />
+    <Content Include="Logo.ico" />
+    <None Include="Resources\后处理配送.png" />
+    <None Include="Resources\topbg.png" />
+    <None Include="Resources\filesave.png" />
+    <None Include="Resources\CloseButton.png" />
+    <None Include="Resources\Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DSMS.DSW.DAL\DSMS.DSW.DAL.csproj">
+      <Project>{FE59E51E-4146-408E-A0AC-F46407B49D3D}</Project>
+      <Name>DSMS.DSW.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DSMS.DSW.Model\DSMS.DSW.Model.csproj">
+      <Project>{3DB5A01F-B60D-4EB9-A9B0-CD7D4BA0B56A}</Project>
+      <Name>DSMS.DSW.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DSMS.DSW.OPC\DSMS.DSW.OPC.csproj">
+      <Project>{24482FD9-730E-4CAA-AC7B-4B290E37F504}</Project>
+      <Name>DSMS.DSW.OPC</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OPCHelper\OPCHelper.csproj">
+      <Project>{0504DBB4-C6FD-44D9-9A70-8B0238EF7F01}</Project>
+      <Name>OPCHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

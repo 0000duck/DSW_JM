@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+<Tag Name="助剂配送机台缸号" Address="PLC.PLC.VW204" Value="" SetValue="" />
+<Tag Name="助剂配送助剂编号" Address="PLC.PLC.VW200" Value="" SetValue="" />
+<Tag Name="助剂配送目标量" Address="PLC.PLC.VD208" Value="" SetValue="" />
+<Tag Name="助剂配送状态" Address="PLC.PLC.VW202" Value="" SetValue="" />
+<Tag Name="助剂配送实际" Address="PLC.PLC.VD212" Value="" SetValue="" />
+
+<Tag Name="机台放水缸号" Address="PLC.PLC.VW224" Value="" SetValue="" />
+<Tag Name="机台放水目标量" Address="PLC.PLC.VD228" Value="" SetValue="" />
+<Tag Name="机台放水状态" Address="PLC.PLC.VW222" Value="" SetValue="" />
+<Tag Name="机台放水实际" Address="PLC.PLC.VD232" Value="" SetValue="" />
+
+<Tag Name="配送总量实际" Address="PLC.PLC.VD268" Value="" SetValue="" />
+<Tag Name="配方状态" Address="PLC.PLC.VW288" Value="" SetValue="" />
+
+<Tag Name="心跳" Address="PLC.PLC.VW290" Value="" SetValue="" /> 
+<Tag Name="A_211" Address="PLC.PLC.VW300" Value="" SetValue="" />
+<Tag Name="A_212" Address="PLC.PLC.VW302" Value="" SetValue="" />
+<Tag Name="A_221" Address="PLC.PLC.VW304" Value="" SetValue="" />
+<Tag Name="A_222" Address="PLC.PLC.VW306" Value="" SetValue="" />
+<Tag Name="A_231" Address="PLC.PLC.VW308" Value="" SetValue="" />
+<Tag Name="A_232" Address="PLC.PLC.VW310" Value="" SetValue="" />
+<Tag Name="A_241" Address="PLC.PLC.VW312" Value="" SetValue="" />
+<Tag Name="A_242" Address="PLC.PLC.VW314" Value="" SetValue="" />
+<Tag Name="A_251" Address="PLC.PLC.VW316" Value="" SetValue="" />
+<Tag Name="A_252" Address="PLC.PLC.VW318" Value="" SetValue="" />
+<Tag Name="A_261" Address="PLC.PLC.VW320" Value="" SetValue="" />
+<Tag Name="A_262" Address="PLC.PLC.VW322" Value="" SetValue="" />
+
+
+<Tag Name="水洗助剂配送助剂编号" Address="PLC.PLC.VW500" Value="" SetValue="" />
+<Tag Name="水洗助剂配送机台缸号" Address="PLC.PLC.VW504" Value="" SetValue="" />
+<Tag Name="水洗助剂配送目标量" Address="PLC.PLC.VD508" Value="" SetValue="" />
+<Tag Name="水洗助剂配送状态" Address="PLC.PLC.VW502" Value="" SetValue="" />
+<Tag Name="水洗助剂配送实际" Address="PLC.PLC.VD512" Value="" SetValue="" />
+
+
+
+
+<Tag Name="水洗机台放水缸号" Address="PLC.PLC.VW524" Value="" SetValue="" />
+<Tag Name="水洗机台放水目标量" Address="PLC.PLC.VD528" Value="" SetValue="" />
+<Tag Name="水洗机台放水状态" Address="PLC.PLC.VW522" Value="" SetValue="" />
+<Tag Name="水洗机台放水实际" Address="PLC.PLC.VD532" Value="" SetValue="" />
+ 
+<Tag Name="水洗配方状态" Address="PLC.PLC.VW588" Value="" SetValue="" />
+
+<Tag Name="A_311" Address="PLC.PLC.VW324" Value="" SetValue="" />
+<Tag Name="A_312" Address="PLC.PLC.VW326" Value="" SetValue="" />
+<Tag Name="A_321" Address="PLC.PLC.VW328" Value="" SetValue="" />
+<Tag Name="A_322" Address="PLC.PLC.VW330" Value="" SetValue="" />
+<Tag Name="A_331" Address="PLC.PLC.VW332" Value="" SetValue="" />
+<Tag Name="A_332" Address="PLC.PLC.VW334" Value="" SetValue="" />
+<Tag Name="A_341" Address="PLC.PLC.VW336" Value="" SetValue="" />
+<Tag Name="A_342" Address="PLC.PLC.VW338" Value="" SetValue="" />
+
+
+
+</Root>
